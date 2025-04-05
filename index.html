@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copilot Test</title>
+    <meta name="description" content="A personal portfolio webpage showcasing skills, projects, and contact information.">
+    <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <header>
+        <h1>Welcome to Copilot Test</h1>
+        <nav role="navigation"></nav>
+            <div class="hamburger-icon">☰</div>
+            <ul class="nav-list" role="list">
+                <li><a href="#about-me" tabindex="0">About Me</a></li>
+                <li><a href="#skills" tabindex="0">Skills</a></li>
+                <li><a href="#projects" tabindex="0">Projects</a></li>
+                <li><a href="#contact" tabindex="0">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about-me" role="region" aria-labelledby="about-me-heading">
+            <h2 id="about-me-heading">About Me</h2>
+            <p>This section is all about me. Here you can add details about yourself, your interests, or your background.</p>
+        </section>
+        <section id="skills" role="region" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+            <ul class="skills-list" role="list">
+                <li>HTML5, CSS3, and JavaScript</li>
+                <li>Responsive Web Design</li>
+                <li>Version Control (Git/GitHub)</li>
+                <li>Frontend Frameworks (e.g., React, Angular)</li>
+                <li>Backend Development (e.g., Node.js, Express)</li>
+                <li>Database Management (e.g., MySQL, MongoDB)</li>
+                <li>Problem-Solving and Debugging</li>
+                <li>API Integration and Development</li>
+            </ul>
+        </section>
+        <section id="projects" role="region" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+            <div class="filters">
+                <button class="filter-button" data-category="all">All</button>
+                <button class="filter-button" data-category="web">Web Development</button>
+                <button class="filter-button" data-category="design">Design</button>
+                <button class="filter-button" data-category="backend">Backend</button>
+            </div>
+            <div class="project-list">
+                <article class="project web" role="article">
+                    <h3>Project 1</h3>
+                    <figure>
+                        <img src="project1.jpg" alt="Screenshot of Project 1">
+                        <figcaption>Project 1: A brief description of the project.</figcaption>
+                    </figure>
+                    <p>This is a placeholder description for Project 1. Add details about the project, its purpose, and technologies used.</p>
+                </article>
+                <article class="project design" role="article">
+                    <h3>Project 2</h3>
+                    <figure>
+                        <img src="project2.jpg" alt="Screenshot of Project 2">
+                        <figcaption>Project 2: A brief description of the project.</figcaption>
+                    </figure>
+                    <p>This is a placeholder description for Project 2. Add details about the project, its purpose, and technologies used.</p>
+                </article>
+                <article class="project backend" role="article">
+                    <h3>Project 3</h3>
+                    <figure>
+                        <img src="project3.jpg" alt="Screenshot of Project 3">
+                        <figcaption>Project 3: A brief description of the project.</figcaption>
+                    </figure>
+                    <p>This is a placeholder description for Project 3. Add details about the project, its purpose, and technologies used.</p>
+                </article>
+            </div>
+        </section>
+        <section id="contact" role="region" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact</h2>
+            <form action="/submit" method="post" role="form">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required tabindex="0">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required tabindex="0">
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required tabindex="0"></textarea>
+                </div>
+                <button type="submit" tabindex="0">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer role="contentinfo"></footer>
+        <p>&copy; 2025 Copilot Test</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
