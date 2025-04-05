@@ -173,6 +173,16 @@ section {
     border-radius: 5px;
 }
 
+/* General project image styling */
+.project img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto 10px; /* Center the image and add spacing */
+    max-width: 500px; /* Set a consistent maximum width for all screen sizes */
+}
+
 /* Lightbox styles */
 .lightbox {
     position: fixed;
@@ -259,4 +269,58 @@ footer {
     padding: 10px;
     text-align: center;
     margin-top: 20px;
+}
+
+/* Responsive Design */
+
+/* For smaller screens (mobile devices) */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .about-me, .skills-list, .projects {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    .project img {
+        max-width: 300px; /* Limit the image size on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+/* For medium screens (tablets) */
+@media (max-width: 1024px) {
+    .projects {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .project-card {
+        width: 45%;
+    }
+
+    .skills-list {
+        padding: 10px;
+    }
+
+    .project img {
+        max-width: 400px; /* Limit the image size on medium screens */
+        height: auto; /* Maintain aspect ratio */
+    }
 }
